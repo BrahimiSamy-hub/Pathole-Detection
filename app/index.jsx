@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import { StatusBar, Alert } from 'expo-status-bar'
 import realtime from '../assets/djo/realtime.png'
+import camera from '../assets/djo/Asset 1.png'
+import gallerie from '../assets/djo/galerie.png'
 import {
   Text,
   View,
@@ -72,11 +74,12 @@ const Index = () => {
                   onPress={() => handleActionPress(1)}
                 >
                   <Image
-                    source={realtime}
+                    source={gallerie}
                     style={{
                       width: '100%',
                       height: '100%',
                       resizeMode: 'contain',
+                      tintColor: 'black',
                     }}
                   />
                   <Text className='text-center'>Gallery</Text>
@@ -86,11 +89,12 @@ const Index = () => {
                   onPress={() => handleActionPress(0)} // Open Camera
                 >
                   <Image
-                    source={realtime}
+                    source={camera}
                     style={{
                       width: '100%',
                       height: '100%',
                       resizeMode: 'contain',
+                      tintColor: 'black',
                     }}
                   />
                   <Text className='text-center'>Camera</Text>
